@@ -1,0 +1,16 @@
+{
+  "id": "nodebb-plugin-facebook-pixel",
+  "url": "https://github.com/Doonloo/nodebb-plugin-facebook-pixel",
+  "library": "./library.js",
+  "hooks": [
+    { "hook": "static:app.load", "method": "init" },
+    { "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+    { "hook": "action:plugin.activate", "method": "activate" },
+    { "hook": "filter:config.get", "method": "onConfigGet" }
+  ],
+  "staticDirs": {
+    "static": "./static"
+  },
+  "scripts": ["static/main.js"],
+  "templates": "static/templates"
+}

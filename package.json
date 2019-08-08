@@ -1,0 +1,42 @@
+{
+  "name": "nodebb-plugin-facebook-pixel",
+  "version": "0.0.1",
+  "description": "A plugin for integrating Facebook Pixel tracking in NodeBB",
+  "scripts": {
+    "format": "prettier --write \"**/**/*.{js,json}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Doonloo/nodebb-plugin-facebook-pixel"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "facebook",
+    "pixel"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  },
+  "author": {
+    "name": "Dimitar K. Nikolov",
+    "email": "dimitar@doonloo.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Doonloo/nodebb-plugin-facebook-pixel/issues"
+  },
+  "readmeFilename": "README.md",
+  "nbbpm": {
+    "compatibility": "^1.0.0"
+  },
+  "devDependencies": {
+    "husky": "^2.4.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "async": "^3.1.0"
+  }
+}
